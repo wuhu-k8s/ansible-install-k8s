@@ -15,7 +15,7 @@ yum install ansible -y
 # cd ansible-install-k8s
 ```
 
-下载准备好软件包并解压/root目录：
+下载准备好软件包（包含所有涉及文件和镜像，比较大），解压到/root目录：
 
 云盘链接：https://pan.baidu.com/s/1uCLylsj1-W2HigS_Tn9b5g 
 提取码：bicc 
