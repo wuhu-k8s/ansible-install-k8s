@@ -1,4 +1,4 @@
-# Kubernetes v1.18 高可用集群自动部署（离线版）
+# Kubernetes v1.20 企业级高可用集群自动部署（离线版）
 >### 确保所有节点系统时间一致
 
 ### 1、找一台服务器安装Ansible
@@ -17,8 +17,8 @@ yum install ansible -y
 
 下载准备好软件包并解压/root目录：
 
-链接：https://pan.baidu.com/s/1EWnJoJjAD3GNqghOwgodWQ 
-提取码：tlvz
+云盘链接：https://pan.baidu.com/s/1uCLylsj1-W2HigS_Tn9b5g 
+提取码：bicc 
 ```
 # tar zxf binary_pkg.tar.gz
 ```
