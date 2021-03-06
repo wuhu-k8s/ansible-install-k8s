@@ -3,8 +3,8 @@
 
 ### 1、找一台服务器安装Ansible
 ```
-yum install epel-release -y
-yum install ansible -y
+# yum install epel-release -y
+# yum install ansible -y
 ```
 ### 2、下载所需文件
 
@@ -59,7 +59,7 @@ cert_hosts:
 
 ## 5、查看集群节点
 ```
-[root@localhost ~]# kubectl get node
+# kubectl get node
 NAME          STATUS   ROLES    AGE   VERSION
 k8s-master    Ready    <none>   9h    v1.20.4
 k8s-node1     Ready    <none>   9h    v1.20.4
@@ -85,7 +85,7 @@ k8s-node2     Ready    <none>   9h    v1.20.4
 ```
 2）执行部署
 ```
-ansible-playbook -i hosts add-node.yml -uroot -k
+# ansible-playbook -i hosts add-node.yml -uroot -k
 ```
 
 
