@@ -79,6 +79,7 @@ k8s-node2     Ready    <none>   9h    v1.20.4
 1）修改hosts，添加新节点ip
 ```
 # vi hosts
+...
 [newnode]
 192.168.31.75 node_name=k8s-node3
 ```
