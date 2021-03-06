@@ -57,7 +57,17 @@ cert_hosts:
 # ansible-playbook -i hosts multi-master-deploy.yml -uroot -k
 ```
 
-## 5、部署控制
+## 5、查看集群节点
+```
+[root@localhost ~]# kubectl get node
+NAME          STATUS   ROLES    AGE   VERSION
+k8s-master1   Ready    <none>   9h    v1.20.4
+k8s-node1     Ready    <none>   9h    v1.20.4
+k8s-node2     Ready    <none>   9h    v1.20.4
+```
+
+## 其他
+### 1、部署控制
 如果安装某个阶段失败，可针对性测试.
 
 例如：只运行部署插件
@@ -65,20 +75,18 @@ cert_hosts:
 # ansible-playbook -i hosts single-master-deploy.yml -uroot -k --tags addons
 ```
 
-## 6、节点扩容
+### 2、节点扩容
 1）修改hosts，添加新节点ip
 ```
 # vi hosts
+[newnode]
+192.168.31.75 node_name=k8s-node3
 ```
 2）执行部署
 ```
 ansible-playbook -i hosts add-node.yml -uroot -k
 ```
-3）在Master节点允许颁发证书并加入集群
-```
-kubectl get csr
-kubectl certificate approve node-csr-xxx
-```
+
 
 视频教程：https://ke.qq.com/course/266656
 
