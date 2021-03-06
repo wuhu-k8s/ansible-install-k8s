@@ -1,5 +1,5 @@
 # Kubernetes v1.20 企业级高可用集群自动部署（离线版）
->### 确保所有节点系统时间一致
+>### 注：确保所有节点系统时间一致
 
 ### 1、找一台服务器安装Ansible
 ```
@@ -41,13 +41,13 @@ cert_hosts:
   etcd:
 ```
 ## 4、一键部署
-### 架构图
+### 4.1 架构图
 单Master架构
 ![avatar](https://github.com/lizhenliang/ansible-install-k8s/blob/master/single-master.jpg)
 
 多Master架构
 ![avatar](https://github.com/lizhenliang/ansible-install-k8s/blob/master/multi-master.jpg)
-### 部署命令
+### 4.2 部署命令
 单Master版：
 ```
 # ansible-playbook -i hosts single-master-deploy.yml -uroot -k
