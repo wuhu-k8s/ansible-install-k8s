@@ -66,8 +66,8 @@ k8s-node1     Ready    <none>   9h    v1.20.4
 k8s-node2     Ready    <none>   9h    v1.20.4
 ```
 
-## 其他
-### 1、部署控制
+## 6、其他
+### 6.1 部署控制
 如果安装某个阶段失败，可针对性测试.
 
 例如：只运行部署插件
@@ -75,7 +75,7 @@ k8s-node2     Ready    <none>   9h    v1.20.4
 # ansible-playbook -i hosts single-master-deploy.yml -uroot -k --tags addons
 ```
 
-### 2、节点扩容
+### 6.2 节点扩容
 1）修改hosts，添加新节点ip
 ```
 # vi hosts
