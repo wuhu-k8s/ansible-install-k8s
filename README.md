@@ -87,7 +87,8 @@ k8s-node2     Ready    <none>   9h    v1.20.4
 ```
 # ansible-playbook -i hosts add-node.yml -uroot -k
 ```
-
+### 6.3 所有HTTPS证书存放路径
+部署产生的证书都会存放到目录“ansible-install-k8s-master/ssl”，一定要保存好，后面还会用到~
 
 视频教程：https://ke.qq.com/course/266656
 
