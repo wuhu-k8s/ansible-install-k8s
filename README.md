@@ -61,7 +61,7 @@ cert_hosts:
 ```
 [root@localhost ~]# kubectl get node
 NAME          STATUS   ROLES    AGE   VERSION
-k8s-master1   Ready    <none>   9h    v1.20.4
+k8s-master    Ready    <none>   9h    v1.20.4
 k8s-node1     Ready    <none>   9h    v1.20.4
 k8s-node2     Ready    <none>   9h    v1.20.4
 ```
